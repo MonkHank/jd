@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字对齐</title>
+
+    <style>
+        div {width: 300px;height: 30px; border: 1px solid red; line-height: 30px;}
+
+        /* display: inline-block; 
+           vertical-align: middle; 
+           一般上面都是标配，这样做可以让文字不动，通过marginTop方便调节span，达到对齐效果
+        */
+        span {width: 10px;height: 10px;background-color: pink; display: inline-block; vertical-align: middle; margin-top: -4px;}
+    </style>
+</head>
+<body>
+    <div><span></span> 文字</div>
+</body>
+</html>

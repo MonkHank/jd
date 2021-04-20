@@ -1,0 +1,68 @@
+body {
+  background-color: #f3f5f7;
+  height: 1000px;
+}
+header {
+  width: 1300px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.logo {
+  width: 195px;
+  height: 42px;
+  float: left;
+}
+.logo a {
+  display: block;
+  width: 195px;
+  height: 42px;
+  background: url(../images/logo.png);
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+nav {
+  float: left;
+  margin-left: 20px;
+}
+nav li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 25px;
+}
+/* 行内元素给height不管用，一定要转成块级元素 */
+nav li a {
+  height: 40px;
+  display: block;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+nav li a:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+  width: 410px;
+  height: 40px;
+  background-color: purple;
+  float: left;
+  margin-left: 50px;
+}
+.search input {
+  width: 361px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  outline: none;
+  padding-left: 10px;
+}
+.search button {
+  width: 49px;
+  height: 40px;
+  float: right;
+  border: 0;
+  outline: none;
+  background: url(../images/fa-search.png);
+}

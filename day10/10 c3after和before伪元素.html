@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c3after和before伪类选择器</title>
+
+    <style>
+        /* 必须带有一个 content 属性 , 其实这个 before 是个盒子 */
+        div::before {content: "我"; width: 55px; height: 55px; background-color: pink; display: block;}
+        div::after {content: "18岁";}
+    </style>
+</head>
+<body>
+    <div>解放军的减肥</div>
+</body>
+</html>
