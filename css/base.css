@@ -10,6 +10,9 @@
 }
 body { height: 1000px; }
 * { margin: 0; padding: 0; }
+.clearfix:before,.clearfix:after {content: ""; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom:1;}
 .w { width: 1190px; margin: auto; }
 a { text-decoration: none; }
 li { list-style: none; }
@@ -57,9 +60,36 @@ input, button {border: 0; padding: 0;}
 .navitems .spacer {float: left; margin-top: 15px; margin-left: 20px; margin-right: -10px;}
 .navitems li a:hover {color: #f10215;}
 
+.footer {height: 560px; background-color: #eaeaea;}
+.footer-service {border-bottom: 1px solid #dedede;}
 
+.footer-service-inner {padding: 30px 0;}
+.footer-service-inner li {float: left; width: 297px; height: 42px;}
+.service-unit {width: 225px;height: 42px;margin: 0 auto; position: relative;}
+.service-unit h5 {width: 36px; height: 42px; position: absolute; top: 0;left: 0; background: url(../images/ico_service.png);text-indent: -99px; overflow: hidden;}
+.service-unit p {line-height: 42px; margin-left: 45px; font-size: 18px; font-weight: 700;}
+.service-unit .kuai {background-position: 0 -44px;}
+.service-unit .hao {background-position: 0 -86px;}
+.service-unit .sheng {background-position: 0 -128px;}
 
-
+.help {height: 180px;padding-top: 20px;}
+.help dl {float: left; width: 195px;}
+.help dt {font-size: 14ps; font-weight: 700; color: #666; height: 30px;}
+.help dd {height: 22px;}
+.help dd a {color: #727272; font-size: 12px;}
+.help dd a:hover {color: #f10215;}
+.help .cover {float: right; width: 207px; height: 150px; background: url(../images/ico_footer.png);}
+.cover dt {text-align: center;}
+.help .info {width: 175px; height: 50px; font-size: 12px; margin-top: 5px; margin-left: 10px; line-height: 18px; color: #727272;}
+.help .more {text-align: right; padding-right: 10px;}
+.copyright {border-top: 1px solid #ccc;}
+.links {text-align: center;}
+.links a {color: #727272; font-size: 12px;}
+.links span {font-size: 12px; color: #d4cdcd; margin: 0 6px;}
+.c-info {font-size: 12px; color: #9e9e9b; text-align: center; line-height: 20px; margin-top: 10px;}
+.tupian {text-align: center; margin-top: 10px;}
+.tupian a {width: 103px;height: 32px;display: inline-block; background: url(../images/ico_footer.png) 0 -151px;}
+.tupian .kexin {background-position: -104px -151px;}
 
 
 
