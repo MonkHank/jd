@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05旋转</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        div{
+            width: 214px;
+            height: 214px;
+            position: relative;
+        }
+        div img{
+            animation: rotate linear 2s infinite;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        div p{
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            line-height: 241px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/web.png" alt="">
+        <p>web前端</p>
+    </div>
+</body>
+</html>
