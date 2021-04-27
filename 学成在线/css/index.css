@@ -1,6 +1,6 @@
 body {
   background-color: #f3f5f7;
-  height: 1000px;
+  height: 1500px;
 }
 header {
   width: 1300px;
@@ -65,4 +65,108 @@ nav li a:hover {
   border: 0;
   outline: none;
   background: url(../images/fa-search.png);
+}
+.personal {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+} 
+.personal dt, .personal dd{
+  float: left;
+}
+.personal s {
+  position: relative;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.personal s::before {/* 伪元素默认是行内元素*/
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.personal span img {
+  border-radius: 50%;
+  margin-right: 10px;
+  /* 过渡写到本身上 */
+  transition: all 0.6s;
+}
+.personal span img:hover {
+  transform: rotate(-360deg);
+}
+
+.banner {
+  height: 420px;
+  background-color: #1c036c;
+}
+.inner {
+  height: 420px;
+  position: relative;
+}
+.subnav {
+  position: absolute;
+  /* 定位不加边偏移，是看不到效果的 */
+  left: 0;
+  top: 0;
+  height: 100%; 
+  width: 190px;
+  background: rgba(0,0,0,.3);
+  padding-top: 20px;
+}
+.subnav li {
+  padding-left: 20px;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+.subnav a {
+  font-style: 14px;
+  color: #fff;
+  display: block;
+}
+.subnav a:hover{
+  color: #00b4ff;
+}
+.subnav span{
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.circle{
+  width: 176px;
+  height: 20px;
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 15px;
+}
+.circle i{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: rgba(255,255,255,.4);
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.circle i:hover{
+  width: 20px;
+  background-color: #fff;
+}
+
+.timebook {
+  width: 227px;
+  height: 300px;
+  position:absolute;
+  right: 0;
+  top:50%;
+  background-color: pink;
+  /* 相对自身往上移动一半 */
+  transform: translate(0,-50%);
 }

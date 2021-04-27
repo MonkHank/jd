@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>03体会过渡</title>
+    <title>15鼠标经过显示阴影</title>
     <style>
         div{
-            width: 200px;
-            height: 200px;
-            background-color: pink;
-            /*  过渡写到本身上 谁做过渡动画，写到谁身上*/
-            transition: all 0.5s;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            transition: all .6s;
         }
         div:hover{
-             width: 300px;
-             height: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,.5);
+            transform: translateY(-20px);
         }
     </style>
 </head>

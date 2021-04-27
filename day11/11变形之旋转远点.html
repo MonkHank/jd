@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>03体会过渡</title>
+    <title>Document</title>
     <style>
         div{
-            width: 200px;
-            height: 200px;
-            background-color: pink;
-            /*  过渡写到本身上 谁做过渡动画，写到谁身上*/
-            transition: all 0.5s;
+            width: 100px;
+            height: 100px;background-color: pink;
+            margin: 100px auto;
+            transition: all .7s;
+            transform-origin:center ;
         }
         div:hover{
-             width: 300px;
-             height: 300px;
+            transform: rotate(360deg);
         }
     </style>
 </head>
 <body>
-    <div></div>
+    <div>123</div>
 </body>
 </html>

@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>07  结构伪类选择器</title>
     <style>
+        ul li:first-child{
+            background-color: pink;
+        }
+
+        ul li:last-child{
+            background-color: pink;
+        }
+        
+        li:nth-child(3){/*选择第3个*/
+            background-color: purple;
+        }
+        
+
+        /* 偶数位置 */
         li:nth-child(even) {background-color: pink;}
 
+        /* 奇数位置 */
         li:nth-child(odd) { background-color: purple; }
         
     </style>

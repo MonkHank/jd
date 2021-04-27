@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>03体会过渡</title>
+    <title>06位移</title>
     <style>
         div{
             width: 200px;
             height: 200px;
             background-color: pink;
-            /*  过渡写到本身上 谁做过渡动画，写到谁身上*/
-            transition: all 0.5s;
+            /* 沿x移动100px 2d移动*/
+            /* transform: translate(100px, 0); */
+            transition: all .4s;
         }
         div:hover{
-             width: 300px;
-             height: 300px;
+            transform: translate(100px,100px);
         }
     </style>
 </head>
